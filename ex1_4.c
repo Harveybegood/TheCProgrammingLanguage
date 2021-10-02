@@ -25,7 +25,7 @@ void main(){
 	}
 }
 
-A table of conversion of Celsisu to Fahrenheit
+/*A table of conversion of Celsisu to Fahrenheit
  fahr celsius                                  
   -20      -4                                  
   -10      14                                  
@@ -42,4 +42,4 @@ A table of conversion of Celsisu to Fahrenheit
   100     212                                  
   110     230                                  
   120     248                                  
-
+*/
