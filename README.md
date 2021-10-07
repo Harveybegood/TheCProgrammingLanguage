@@ -11,3 +11,7 @@ I shall write programs for all exercises in this book and upload them to this re
       }
     }
 ```
+
+### Further understanding to the main function in C  
+    Function main is a function like any other, it may return a value to its caller, which is in effect the environmentin in which  
+    the program was executed. As a reminder that programs should return status to their environment.
