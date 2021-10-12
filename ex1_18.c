@@ -58,11 +58,10 @@ int get_line(char s[], int lim){
 void del_trailing_blnks(char s[], int lim){
 
 	int i;
-	i = 0;
 
-	while (s[lim - 3] == ' ' || s[lim - 3] == '\t'){
-		s[lim - 3] = '\t';
-		s[lim - 2] = '\0';
+	while ((s[lim - 2] == ' ' || s[lim - 2] == '\t') && s[lim - 1] == '\n'){
+		s[lim - 2] = '\n';
+		s[lim - 1] = '\0';
 		--lim;
 	} 
 
@@ -81,10 +80,10 @@ void del_trailing_blnks(char s[], int lim){
  *		                                                 
  *	    Length of origin input line 32 
  *	    I assume you are using clang                     
- *	    Length after removing trailing blanks and tabs 30
+ *	    Length after removing trailing blanks and tabs 29
  *
- *		     	                                                                                 input key "enter" 
- *		
+ * 
+ * 	    Input key "enter"  		
  *
  *		Length of origin input line 1                                                                                                                                                     Length after removing trailing blanks and tabs 1
  *		
@@ -93,8 +92,7 @@ void del_trailing_blnks(char s[], int lim){
  *
  *
  *		Length of origin input line 2                    
- *		                                                                                         Length after removing trailing blanks and tabs 2 
- *
+ *		                                                                                         Length after removing trailing blanks and tabs 1 
  *
  *
  *
