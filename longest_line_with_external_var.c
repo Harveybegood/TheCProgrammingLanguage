@@ -13,8 +13,8 @@
 //#define MAXLINE 1000
 
 int max;
-char line[MAXLINE];
-char longest[MAXLINE];
+char line[];
+char longest[];
 
 int get_line(void);
 void copy(void);
