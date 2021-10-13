@@ -9,13 +9,12 @@
 #include <stdio.h>
 #include "externhead.h" // implicit extern statement
 
-// explicit extern statement as below
 
 //#define MAXLINE 1000
 
-//int max;
-//char line[MAXLINE];
-//char longest[MAXLINE];
+int max;
+char line[MAXLINE];
+char longest[MAXLINE];
 
 int get_line(void);
 void copy(void);
@@ -23,12 +22,8 @@ void copy(void);
 int main(){
 
 	int len;
-	/*extern int max;
-	extern char longest[]; 
-
-	*/
-	extern int max;
-    extern char longest[]; 
+	//extern int max;
+    //extern char longest[]; 
 	max = 0;
 	while ((len = get_line()) > 0){
 	
@@ -48,8 +43,8 @@ int main(){
 
 int get_line(void){
 	int i, c;
-
-	extern char line[]; 
+	
+	//extern char line[]; 
 
 	// utilize getchar() to get each next line if there is any
 	
@@ -72,9 +67,9 @@ int get_line(void){
 void copy(void){
 	int i;
 	
-	extern char line[];
-	extern char longest[];
-
+	//extern char line[];
+	//extern char longest[];
+	
 	i = 0;	
 	while ((longest[i] = line[i]) != '\0'){
 		
