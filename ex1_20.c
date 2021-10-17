@@ -6,7 +6,7 @@
  * */
 
 #include <stdio.h>
-#define MAXLINE 1000
+//#define MAXLINE 1000
 #define tabstops 10    // since n will be a fixed set of tab stops
 
 
